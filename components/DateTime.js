@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         marginLeft: "30px",
     },
     subheading: {
-        fontSize: 36,
+        fontSize: 30,
         color:"#FFFFFF",
         fontWeight: "400",
         paddingBottom: 8,

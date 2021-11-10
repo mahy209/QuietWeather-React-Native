@@ -3,13 +3,15 @@ import React from 'react';
 import { StyleSheet, View, ImageBackground } from 'react-native';
 
 import DateTime from './components/DateTime';
+import WeatherScroll from './components/WeatherScroll';
 
 const img = require ('./assets/1.jpg')
 export default function App() {
   return (
     <View style={styles.container}>
     <ImageBackground source={img} style={styles.image}>
-    <DateTime />
+    <DateTime/>
+    <WeatherScroll/>
     </ImageBackground>
     </View>
   );
