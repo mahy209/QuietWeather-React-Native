@@ -42,7 +42,6 @@ const styles = StyleSheet.create({
         flex: 1.5,
         flexDirection: "row",
         justifyContent: "space-between",
-        fontFamily: "Scada",
         padding: 10,
     },
     heading:{
@@ -51,6 +50,8 @@ const styles = StyleSheet.create({
         fontWeight: "100",
         paddingTop: 10,
         marginLeft: "30px",
+        left: 38.31,
+        top: 50,
     },
     subheading: {
         fontSize: 30,
@@ -58,6 +59,8 @@ const styles = StyleSheet.create({
         fontWeight: "400",
         paddingBottom: 8,
         marginLeft: "30px",
+        left: 50,
+        top: 135,
     },
     rightAlign:{
         textAlign: "right",
@@ -68,6 +71,8 @@ const styles = StyleSheet.create({
         color: "#FFFFFF",
         padding: 8,
         marginLeft: "20px",
+        left: 324.5,
+        top: 73.76,
     },
     locationZone:{
         fontSize: 20,
@@ -75,12 +80,14 @@ const styles = StyleSheet.create({
         fontWeight: "400",
         padding: 10,
         marginLeft: "50px",
+        left: 379,
+        top: 109.02,
     },
     WeatherItemContainer:{
-        width: "200px",
-        height: "140px",
+        width: 200,
+        height: 140,
         backgroundColor: "rgba(0, 0, 0, 0.6)",
-        borderRadius: "10px",
+        borderRadius: 10,
         padding: 15,
         marginLeft: "40px",
     },
