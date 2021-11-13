@@ -1,29 +1,38 @@
 import React from 'react'
 import {View, ScrollView, Image, Text, StyleSheet} from 'react-native';
 
+import moment from 'moment-timezone'
+
 import FutureForecast from './FutureForecast'
 
-const WeatherScroll = () => {
+const WeatherScroll = ({weatherData}) => {
     return(
         <ScrollView horizontal={true} style={styles.Scrolling}>
-            <CurrentTemp1/>
-            <FutureForecast/>
+            <CurrentTemp1 data={weatherData && weatherData.length > 0 ? weatherData[0] : {}}/>
+            <FutureForecast data={weatherData}/>
         </ScrollView>
     )
 }
 
-const CurrentTemp1 = () => {
-    const img = require ("../assets/sun.png")
+const CurrentTemp1 = ({data}) => {
+    if(data && data.weather){
+    const img = {uri: 'http://openweathermap.org/img/wn/'+ data.weather[0].icon +'@4x.png'}
     return(
         <View style={styles.CurrentTempContainer}>
         <Image source={img} style={styles.image}/>
         <View style={styles.otherContainer}>
-        <Text style={styles.day}>Sunday</Text>
-        <Text style={styles.temp}>Night- 28&#x2103;</Text>
-        <Text style={styles.temp}>Day- 28&#x2103;</Text>
+            <Text  style={styles.day}>{moment(data.dt * 1000).format('dddd')}</Text>
+            <Text  style={styles.temp}>Night - {data.temp.night}&#176;C</Text>
+            <Text  style={styles.temp}>Day - {data.temp.day}&#176;C</Text>
         </View>
         </View>
     )
+}else{
+    return( 
+        <View>
+        </View>
+    ) 
+}
 }
 
 const styles = StyleSheet.create({
@@ -38,8 +47,8 @@ const styles = StyleSheet.create({
     },
     CurrentTempContainer:{
         flexDirection: "row",
-        width: 400,
-        height: 300,
+        width: 450,
+        height: 350,
         backgroundColor: "#00000033",
         borderColor: "grey",
         borderRadius: 10,
@@ -68,7 +77,7 @@ const styles = StyleSheet.create({
         margin: 10,
         color: "white",
         fontWeight: "300",
-        width: 78,
+        width: 90,
         height: 60,
         left: 285,
         top: 798,
