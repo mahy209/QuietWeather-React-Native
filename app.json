@@ -23,7 +23,10 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "in.mahymohab.QuietWeather",
+      "versionCode": 1,
+      "permissions": ["LOCATION"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
