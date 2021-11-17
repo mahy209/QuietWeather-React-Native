@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     heading:{
-        fontSize:56,
+        fontSize:50,
         color:"#FFFFFF",
         fontWeight: "100",
         paddingTop: 10,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
         top: 50,
     },
     subheading: {
-        fontSize: 26,
+        fontSize: 24,
         color:"#FFFFFF",
         fontWeight: "400",
         paddingBottom: 8,

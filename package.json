@@ -20,7 +20,8 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.2",
-    "react-native-web": "0.17.1"
+    "react-native-web": "0.17.1",
+    "expo-location": "~13.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
