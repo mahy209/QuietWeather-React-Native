@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "WeatherApp-ReactNative",
-    "slug": "WeatherApp-ReactNative",
+    "name": "Quiet weather",
+    "slug": "Quiet_weather",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/weathericon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -21,7 +21,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/weathericon.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "in.mahymohab.QuietWeather",
@@ -29,7 +29,7 @@
       "permissions": ["LOCATION"]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/weathericon.png"
     }
   }
 }

@@ -2,8 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, {useEffect,useState} from 'react'
 import { StyleSheet, View, ImageBackground } from 'react-native';
 
-import * as location from 'expo-location';
-import AppLoading from 'expo-app-loading';
+import * as Location from 'expo-location';
 import { useFonts, Scada_400Regular } from '@expo-google-fonts/scada';
 
 import DateTime from './components/DateTime';
@@ -12,6 +11,7 @@ import WeatherScroll from './components/WeatherScroll';
 const API_KEY = '1ea87fd965b57956c429979417f99052';
 
 const img = require ('./assets/4.jpg')
+
 export default function App() {
   const [data, setData] = useState({});
 
