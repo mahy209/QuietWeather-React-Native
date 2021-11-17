@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     FutureForecastitemContainer:{
         flex: 1,
         width: 220,
-        height: 350,
+        height: 300,
         justifyContent: "center",
         backgroundColor: "#00000033",
         borderColor: "#9D9A9A",

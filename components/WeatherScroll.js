@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     CurrentTempContainer:{
         flexDirection: "row",
         width: 450,
-        height: 350,
+        height: 300,
         backgroundColor: "#00000033",
         borderColor: "grey",
         borderRadius: 10,
